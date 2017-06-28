@@ -1,3 +1,70 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header {
+	background-color: black;
+	height: 120px;
+	margin: 0 2px 2px;
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+#navbar{
+	margin: 0 2px 2px;
+	height: 30px;
+}
+
+#navbar ul {
+	width: 100%;
+	font-size: 15px;
+}
+
+#navbar li {
+	display: inline-block;
+	width: 25%;
+	height: auto;
+}
+
+#mainContainer {
+	border-left: 2px white solid;
+	border-right: 2px white solid;
+}
+
+#content {
+	height: auto;
+	background-color: black;
+	border-right: 2px white solid;
+	color: white;
+}
+
+#sidebar {
+	height: 1372px;
+	background-color: black;
+}
+
+#content h4 {
+	color: white;
+	margin: 15px 0 20px;
+}
+
+#sidebar h4 {
+	color: white;
+	margin: 15px 0 20px;
+}
+
+#skream {
+	margin: auto;
+}
+
+#nectar {
+	margin: auto;
+}

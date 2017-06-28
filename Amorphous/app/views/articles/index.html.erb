@@ -1,47 +1,39 @@
-<div id="header">
-	<%= image_tag("logo_black.png", id: "logo") %>
-</div>
-<div id="navbar">
-	<ul>
-		<li>Articles</li>
-		<li>Tunes</li>
-		<li>Events</li>
-		<li>Artists</li>
-	</ul>
-</div>
-<div id="main">
-	<h2>Media Content:</h2>
-	<table>
-		<thead>
-			<tr>
-				<th colspan="3"></th>
-			</tr>
-		</thead>
-		<tbody>	<% @articles.each do |article| %>
-				<tr>
-					<td><%= link_to 'Show', article %></td>
-					<td><%= link_to 'Edit', edit_article_path(article) %></td>
-					<td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-				</tr> <% end %>
-		</tbody>
-	</table>
-	<br>
-</div>
-<div id="events">
-	<h3>Upcoming Events:</h3>
-	<ul>
-		<li>Super Rad Event</li>
-			<ul>
-				<li class="tinylist">Location: U Street Music Hall</li>
-				<li class="tinylist">Date: March 25, 1991</li>
-			</ul>
-		<li>OTHER Super Rad Event</li>
-			<ul>
-				<li class="tinylist">Location: Flash</li>
-				<li class="tinylist">Date: Sept 12, 2017</li>
-			</ul>
-		<li>Crazy Wicked-Rad Event</li>
-	</ul>
+<div class="container-fluid" id="header">
+	<img src="assets/logo_black.png" alt="Logo" id="logo">
 </div>
 
-<%= link_to 'New Article', new_article_path %>
+<nav class="navbar navbar-inverse" id="navbar">
+	<div class="container-fluid text-center">
+		<ul class="nav navbar-nav">
+			<li><a href="">Articles</a></li>
+			<li><a href="">Tunes</a></li>
+			<li><a href="">Artists</a></li>
+			<li><a href="">Events</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container-fluid" id="mainContainer">
+	<div class="row">
+        <div id="content" class="col-xs-9 text-center">
+        	<br>
+        	<h4>Skream Sells Out Verizon Center</h4>
+        	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        	<br>
+        	<img src="assets/skream.jpg" alt="Skream" id="skream" class="img-responsive">
+        	<br>
+        	<hr>
+        	<br>
+        	<h4>Bassnectar Gives Out Free Hugs</h4>
+        	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        	<br>
+        	<img src="assets/nectar.jpg" alt="Nectar" id="nectar" class="img-responsive">
+        	<br>
+        	<hr>
+        </div>
+        <div id="sidebar" class="col-xs-3 text-center">
+        	<br>
+        	<h4>Upcoming</h4>
+        </div>
+	</div>
+</div>
