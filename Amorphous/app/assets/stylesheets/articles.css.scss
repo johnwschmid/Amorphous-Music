@@ -37,28 +37,22 @@
 #mainContainer {
 	border-left: 2px white solid;
 	border-right: 2px white solid;
+	height: 1400px;
+	background-color: black;
 }
 
 #content {
 	height: auto;
-	background-color: black;
 	border-right: 2px white solid;
 	color: white;
 }
 
-#sidebar {
-	height: 1372px;
-	background-color: black;
+#article1{
+	background: linear-gradient(black, gray);
 }
 
-#content h4 {
-	color: white;
-	margin: 15px 0 20px;
-}
-
-#sidebar h4 {
-	color: white;
-	margin: 15px 0 20px;
+#article2 {
+	background: linear-gradient(gray, black);
 }
 
 #skream {
@@ -67,4 +61,29 @@
 
 #nectar {
 	margin: auto;
+}
+
+#sidebar {
+	color: white;
+	background: linear-gradient(black, gray);
+	height: 1100px;
+}
+
+#content h4 {
+	margin: 15px 0 20px;
+}
+
+#sidebar h4 {
+	margin: 15px 0 20px;
+	text-align: center;
+}
+
+li {
+	color: #BF1628;
+}
+
+.tinylist {
+	color: #730E79;
+	font-size: 9pt;
+	margin-bottom: 5px;
 }
