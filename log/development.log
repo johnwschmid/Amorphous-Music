@@ -25471,3 +25471,44 @@ Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-07-06 22:43:00 -0400
 
 
 Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-07-06 22:43:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-06 22:46:18 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 5209ms (Views: 5175.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-06 22:46:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-06 22:46:23 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-07-06 22:46:23 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-07-06 23:05:44 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-06 23:05:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-06 23:05:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-06 23:06:11 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.9ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2542ms (Views: 2504.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-07-06 23:06:13 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-06 23:06:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-06 23:06:13 -0400
