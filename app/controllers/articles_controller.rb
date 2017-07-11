@@ -8,6 +8,7 @@ class ArticlesController < ApplicationController
 
   # articles/all
   def all
+    @articles = Article.all
   end
 
   # GET /articles/1
