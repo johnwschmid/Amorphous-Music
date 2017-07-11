@@ -8,9 +8,17 @@ class ArticlesController < ApplicationController
 
   # articles/all
   def all
-    @articles = Article.all
   end
 
+  def music
+  end
+
+  def artists
+  end
+
+  def events
+  end
+  
   # GET /articles/1
   # GET /articles/1.json
   def show
