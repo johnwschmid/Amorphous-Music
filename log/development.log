@@ -40828,3 +40828,3391 @@ ActionController::RoutingError (No route matches [GET] "/articles/assets/nectar.
   Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
   Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
   Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:28:31 -0400
+
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (103.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:29:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (15.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+  [1m[35mArticle Load (38.9ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 5876ms (Views: 5717.2ms | ActiveRecord: 38.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:29:08 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:29:09 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:29:09 -0400
+
+
+Started GET "/assets/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:29:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/logo_cropped.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (55.5ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.4ms)
+
+
+Started GET "/articles/artists" for 127.0.0.1 at 2017-08-01 16:29:21 -0400
+Processing by ArticlesController#artists as HTML
+  Rendered articles/artists.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 421ms (Views: 394.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:29:22 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/logo_black.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.0ms)
+
+
+Started GET "/articles/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:29:22 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/skream.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.8ms)
+
+
+Started GET "/articles/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:29:22 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/nectar.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:29:23 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (1.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 161ms (Views: 129.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:29:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/nectar.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.1ms)
+
+
+Started GET "/articles/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:29:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/skream.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.6ms)
+
+
+Started GET "/articles/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:29:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/logo_black.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 114ms (Views: 83.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:29:44 -0400
+
+
+Started GET "/assets/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:29:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/logo_cropped.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:30:17 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2333ms (Views: 2304.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:30:19 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:30:21 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:30:40 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2387ms (Views: 2356.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:30:43 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:30:45 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:31:16 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2358ms (Views: 2326.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:31:19 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:31:21 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:32:25 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:32:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:32:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:34:49 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2386ms (Views: 2355.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:34:51 -0400
+
+
+Started GET "/assets/images/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:34:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo_cropped.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:35:33 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2378ms (Views: 2343.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:35:36 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:37:30 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2468ms (Views: 2437.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:37:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/logo_cropped.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 106ms (Views: 77.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:37:35 -0400
+
+
+Started GET "/assets/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:37:37 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/logo_cropped.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:38:18 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2425ms (Views: 2391.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:38:21 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:46:10 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2392ms (Views: 2363.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:46:12 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:46:32 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2413ms (Views: 2380.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:46:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:47:24 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2415ms (Views: 2383.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:47:27 -0400
+
+
+Started GET "/assets/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:47:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/logo_cropped.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.8ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:47:39 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:47:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:47:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:48:33 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2379ms (Views: 2348.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:48:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:35 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:48:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:48:36 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:48:39 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:48:47 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:48:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:48:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:51:51 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2450ms (Views: 2420.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:51:54 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:51:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:54:59 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2415ms (Views: 2383.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:55:02 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:55:05 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:55:38 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2354ms (Views: 2321.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:55:41 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:55:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 16:55:49 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2374ms (Views: 2341.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 16:55:52 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 16:55:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:00:12 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2367ms (Views: 2334.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:00:14 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:00:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:00:25 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2406ms (Views: 2373.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:00:28 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:00:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:03:06 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2352ms (Views: 2321.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:03:09 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:03:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:03:31 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2380ms (Views: 2349.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:33 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:34 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:03:34 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:03:34 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:03:34 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:03:34 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:03:35 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:06:27 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2390ms (Views: 2358.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:06:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:06:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:06:30 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:06:32 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:06:56 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2383ms (Views: 2350.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:06:58 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:07:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:07:16 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2348ms (Views: 2317.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:07:19 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:07:20 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:07:28 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2351ms (Views: 2321.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:07:31 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:07:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:08:01 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2395ms (Views: 2362.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:08:04 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:08:06 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:08:28 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2346ms (Views: 2315.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:08:30 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:08:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:08:41 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2409ms (Views: 2375.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:08:43 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:08:44 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:08:47 -0400
+
+
+Started GET "/articles/music" for 127.0.0.1 at 2017-08-01 17:08:59 -0400
+Processing by ArticlesController#music as HTML
+  Rendered articles/music.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 151ms (Views: 121.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:08:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/skream.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.1ms)
+
+
+Started GET "/articles/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:08:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/nectar.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.7ms)
+
+
+Started GET "/articles/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:08:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/logo_black.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:09:05 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (9.4ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 187ms (Views: 154.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:09:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/skream.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.8ms)
+
+
+Started GET "/articles/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:09:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/logo_black.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.7ms)
+
+
+Started GET "/articles/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:09:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/nectar.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 113ms (Views: 81.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:09:42 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:09:44 -0400
+
+
+Started GET "/articles/artists" for 127.0.0.1 at 2017-08-01 17:10:14 -0400
+Processing by ArticlesController#artists as HTML
+  Rendered articles/artists.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 130ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:10:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/logo_black.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.3ms)
+
+
+Started GET "/articles/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:10:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/skream.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.4ms)
+
+
+Started GET "/articles/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:10:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/nectar.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:10:15 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 181ms (Views: 144.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:10:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/logo_black.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.8ms)
+
+
+Started GET "/articles/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:10:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/skream.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.7ms)
+
+
+Started GET "/articles/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:10:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/assets/nectar.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Schmidward/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 114ms (Views: 82.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:39 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:13:45 -0400

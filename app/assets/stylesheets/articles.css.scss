@@ -29,9 +29,15 @@
 }
 
 #navbar li {
-	display: inline-block;
+	display: list-item;
+	list-style-type: none;
 	width: 25%;
 	height: auto;
+}
+
+#navbar ul li:hover {
+	background: url('logo_cropped.png') no-repeat left;
+
 }
 
 #mainContainer {
