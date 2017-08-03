@@ -5,8 +5,12 @@
 #header {
 	background-color: black;
 	height: 120px;
-	margin: 0 2px 2px;
+	margin: 2px 2px;
 	position: relative;
+}
+
+#header h5 {
+	color: gray;
 }
 
 #logo {
@@ -93,11 +97,15 @@
 
 #content h4 {
 	margin: 15px 0 20px;
+	color: gray;
+	text-decoration: underline;
 }
 
 #sidebar h4 {
 	margin: 15px 0 20px;
 	text-align: center;
+	color: gray;
+	text-decoration: underline;
 }
 
 #sidebar ul {

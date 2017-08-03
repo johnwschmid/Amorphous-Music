@@ -44216,3 +44216,1491 @@ Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-01 17:13:40 -0400
 
 
 Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-01 17:13:45 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:22:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 225ms
+
+ActionView::Template::Error (Invalid CSS after "	background: ": expected expression (e.g. 1px, bold), was ";"
+  (in /Users/Schmidward/Desktop/k0d35/Amorphous/app/assets/stylesheets/articles.css.scss:13)):
+    2: <html>
+    3: <head>
+    4: 	<title>Amorphous Music</title>
+    5: 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 	<%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/articles.css.scss:13
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___720512161430153639_70135079818780'
+
+
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Schmidward/.rvm/gems/ruby-2.2.6/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:22:37 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 5549ms (Views: 5495.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:22:43 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:22:50 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:23:32 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2371ms (Views: 2340.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:23:34 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:23:35 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:23:47 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2384ms (Views: 2352.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:23:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:23:50 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:23:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:24:12 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2398ms (Views: 2367.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:24:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:24:36 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2500ms (Views: 2469.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:24:38 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:24:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 112ms (Views: 82.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:25:05 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:25:06 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:25:06 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:25:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:25:43 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 108ms (Views: 76.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:25:44 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:25:49 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:25:56 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2458ms (Views: 2428.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:25:59 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:26:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 102ms (Views: 75.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:26:38 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 114ms (Views: 82.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:26:48 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:27:18 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 18:30:49 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2368ms (Views: 2331.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 18:30:51 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 18:35:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 19:32:27 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2397ms (Views: 2368.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 19:32:29 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 19:32:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 19:33:06 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2367ms (Views: 2337.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 19:33:09 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 19:33:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 19:34:14 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2380ms (Views: 2349.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 19:34:17 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 19:34:32 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 19:34:51 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2395ms (Views: 2365.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 19:34:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:53 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 19:34:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 19:34:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 19:34:54 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 19:35:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 19:35:33 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2360ms (Views: 2329.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 19:35:36 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 19:36:19 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+Completed 200 OK in 2407ms (Views: 2375.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 19:36:22 -0400
+
+
+Started GET "/assets/logo_cropped.png" for 127.0.0.1 at 2017-08-02 19:36:23 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 19:36:42 -0400
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2344ms (Views: 2314.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/logo_black.png" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/skream.jpg" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
+
+
+Started GET "/assets/nectar.jpg" for 127.0.0.1 at 2017-08-02 19:36:45 -0400
