@@ -1,15 +1,48 @@
-<div class="col-xs-3 center"></div>
-<div id="signUp" class="col-xs-6">
-	<h2>Sign Up</h2>
-	<%= form_for @user do |f| %>
-		<%= f.label :username %>
-		<%= f.text_field :username %>
-		<%= f.label :email %>
-		<%= f.email_field :email %>
-		<%= f.label :password %>
-		<%= f.password_field :password %>
-		<%= f.label :password_confirmation, "Confirmation" %>
-		<%= f.password_field :password_confirmation %>
-	<% end %>
+<div class="container-fluid" id="header">
+	<img src="assets/logo_black.png" alt="Logo" id="logo">
+	<div>
+		<h5>A Site By:<h5>
+		<h5>John W. Schmid</h5>
+	</div>
+	<div class="btn-group-vertical" id="signUpButton">
+		<a href="/" class="btn btn-danger">Home</a>
+	</div>
 </div>
-<div class="col-xs-3 center"></div>
+
+<nav class="navbar navbar-inverse" id="navbar">
+	<div class="container-fluid text-center">
+		<ul class="nav navbar-nav">
+			<li><a href="/articles/all">Articles</a></li>
+			<li><a href="/articles/music">Music</a></li>
+			<li><a href="/articles/artists">Artists</a></li>
+			<li><a href="/articles/events">Events</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div id="bodyContainer">
+	<div class="col-xs-4 center"></div>
+	<div id="signUp" class="col-xs-4">
+		<h2>Sign Up</h2>
+		<%= form_for @user, :html => {:class => "form-horizontal"} do |f| %>
+			<br>
+			<div class="form-group">
+				<%= f.label :username, "Username:", class: "control-label col-xs-2" %>
+				<%= f.text_field :username %>
+			</div>
+			<div class="form-group">
+				<%= f.label :email, "Email:", class: "control-label col-xs-2" %>
+				<%= f.email_field :email %>
+			</div>
+			<div class="form-group">
+				<%= f.label :password, "Password:", class: "control-label col-xs-2" %>
+				<%= f.password_field :password %>
+			</div>
+			<div class="form-group">
+				<%= f.label :password_confirmation, "Confirmation:", class: "control-label col-xs-2" %>
+				<%= f.password_field :password_confirmation %>
+			</div>
+		<% end %>
+	</div>
+	<div class="col-xs-4 center"></div>
+</div>
