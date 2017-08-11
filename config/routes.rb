@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
 
-	resources :users
 	root 'articles#index'
 	get 'articles/all' => 'articles#all'
 	get 'articles/music' => 'articles#music'
 	get 'articles/artists' => 'articles#artists'
 	get 'articles/events' => 'articles#events'
 	get '/signup' => 'users#new'
+	post '/signup' => 'users#create'
 	get '/profile' => 'users#show'
+	resources :users
 
 	# The priority is based upon order of creation: first created -> highest priority.
 	# See how all your routes lay out with "rake routes".

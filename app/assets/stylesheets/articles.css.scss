@@ -117,11 +117,17 @@
 }
 
 .biglist {
-	color: #BF1628;
+	color: #C11A35;
 }
 
 .tinylist {
 	color: #730E79;
 	font-size: 9pt;
 	margin-bottom: 5px;
+}
+
+#successAlert {
+	margin: 2px;
+	text-align: center;
+	border: black 1px solid;
 }
